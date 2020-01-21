@@ -1,0 +1,12 @@
+{{log this.router.currentRoute}}
+
+<dl>
+  <dd>currentURL</dd>
+  <dt>{{this.router.currentURL}}</dt>
+  <dd>currentRoute.queryParams</dd>
+  <dt>
+    {{#each-in this.router.currentRoute.queryParams as |key value|}}
+      {{key}}: {{value}}<br>
+    {{/each-in}}
+  </dt>
+</dl>
